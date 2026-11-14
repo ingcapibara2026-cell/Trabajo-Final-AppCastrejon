@@ -1,0 +1,40 @@
+<section aria-label="Destinos destacados">
+  <div #carrusel id="carrusel" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carrusel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Imagen 1"></button>
+      <button type="button" data-bs-target="#carrusel" data-bs-slide-to="1" aria-label="Imagen 2"></button>
+    </div>
+
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="images/carrusel1.png" class="d-block w-100" width="1600" height="600" alt="Montañas nevadas con un avión en el cielo">
+        <div class="carousel-caption">
+          <h2 class="h4">Descubre tu próximo destino</h2>
+          <p>Paquetes a medida para viajar con tranquilidad.</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="images/carrusel2.png" class="d-block w-100" width="1600" height="600" alt="Playa al atardecer con una palmera y un velero">
+        <div class="carousel-caption">
+          <h2 class="h4">Playas, montañas y ciudades</h2>
+          <p>Elige tu atractivo favorito y nosotros organizamos el resto.</p>
+        </div>
+      </div>
+    </div>
+
+    <button class="carousel-control-prev" type="button" data-bs-target="#carrusel" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Anterior</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carrusel" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Siguiente</span>
+    </button>
+  </div>
+</section>
+
+<section class="container text-center my-5">
+  <h1>Viajes Peru</h1>
+  <p class="lead">Cuéntanos a dónde quieres ir y registra tu pedido de compra en pocos pasos.</p>
+  <a class="btn btn-naranja" routerLink="/contactenos">Hacer un pedido</a>
+</section>

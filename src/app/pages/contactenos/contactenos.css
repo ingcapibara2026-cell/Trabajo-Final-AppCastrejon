@@ -1,0 +1,65 @@
+h1 {
+  color: #0f4c5c;
+  font-weight: 700;
+}
+
+.intro {
+  color: #4a5a6a;
+  margin-bottom: 1.5rem;
+}
+
+.formulario {
+  background-color: #ffffff;
+  border: 1px solid #dee2e6;
+  border-radius: 1rem;
+  box-shadow: 0 6px 20px rgba(15, 76, 92, 0.12);
+  padding: 2rem;
+}
+
+.form-label {
+  font-weight: 700;
+  color: #0f4c5c;
+}
+
+.form-control {
+  border-radius: 0.5rem;
+  transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+.form-control:focus {
+  border-color: #e36414;
+  box-shadow: 0 0 0 0.25rem rgba(227, 100, 20, 0.25);
+}
+
+.form-control:hover {
+  border-color: #1b7f8f;
+}
+
+textarea {
+  resize: none;
+}
+
+.btn-cancelar {
+  background-color: transparent;
+  color: #0f4c5c;
+  font-weight: 700;
+  border: 2px solid #0f4c5c;
+  border-radius: 50rem;
+  padding: 0.7rem 1.8rem;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.btn-cancelar:hover {
+  background-color: #0f4c5c;
+  color: #ffffff;
+}
+
+@media (max-width: 575.98px) {
+  .formulario {
+    padding: 1.25rem;
+  }
+
+  .botones .btn {
+    width: 100%;
+  }
+}

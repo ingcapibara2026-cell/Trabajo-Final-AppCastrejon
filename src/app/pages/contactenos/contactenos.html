@@ -1,0 +1,74 @@
+<section class="container my-5">
+  <div class="row justify-content-center">
+    <div class="col-lg-8">
+      <h1>Contáctenos</h1>
+      <p class="intro">Completa el formulario para registrar tu pedido de compra. Debajo de cada campo encontrarás una guía de qué escribir.</p>
+
+      <form class="formulario">
+        <div class="row g-3">
+          <div class="col-md-6">
+            <label for="nombre" class="form-label">Nombre del cliente</label>
+            <input type="text" id="nombre" class="form-control" placeholder="Ej.: María Pérez Gómez" autocomplete="name" aria-describedby="ayuda-nombre">
+            <div id="ayuda-nombre" class="form-text">Escribe tus nombres y apellidos completos.</div>
+          </div>
+
+          <div class="col-md-6">
+            <label for="correo" class="form-label">Correo</label>
+            <input type="email" id="correo" class="form-control" placeholder="nombre&#64;correo.com" autocomplete="email" aria-describedby="ayuda-correo">
+            <div id="ayuda-correo" class="form-text">Te enviaremos la confirmación del pedido a este correo.</div>
+          </div>
+
+          <div class="col-md-6">
+            <label for="fecha" class="form-label">Fecha de salida</label>
+            <input type="date" id="fecha" class="form-control" aria-describedby="ayuda-fecha">
+            <div id="ayuda-fecha" class="form-text">Elige el día en que deseas iniciar tu viaje.</div>
+          </div>
+
+          <div class="col-md-6">
+            <label for="ciudad" class="form-label">Ciudad de destino</label>
+            <input type="text" id="ciudad" class="form-control" list="lista-ciudades" placeholder="Ej.: Cusco" aria-describedby="ayuda-ciudad">
+            <datalist id="lista-ciudades">
+              <option value="Cusco"></option>
+              <option value="Arequipa"></option>
+              <option value="Lima"></option>
+              <option value="Puno"></option>
+              <option value="Piura"></option>
+              <option value="Iquitos"></option>
+            </datalist>
+            <div id="ayuda-ciudad" class="form-text">Escribe o elige de la lista la ciudad a la que viajarás.</div>
+          </div>
+
+          <div class="col-md-6">
+            <label for="atractivo" class="form-label">Principal atractivo</label>
+            <input type="text" id="atractivo" class="form-control" list="lista-atractivos" placeholder="Ej.: Machu Picchu" aria-describedby="ayuda-atractivo">
+            <datalist id="lista-atractivos">
+              <option value="Machu Picchu"></option>
+              <option value="Cañón del Colca"></option>
+              <option value="Lago Titicaca"></option>
+              <option value="Líneas de Nazca"></option>
+              <option value="Playas de Máncora"></option>
+            </datalist>
+            <div id="ayuda-atractivo" class="form-text">Indica el lugar que más te gustaría visitar.</div>
+          </div>
+
+          <div class="col-md-6">
+            <label for="documentos" class="form-label">Adjuntar documentos</label>
+            <input type="file" id="documentos" class="form-control" multiple accept=".pdf,.jpg,.jpeg,.png" aria-describedby="ayuda-documentos">
+            <div id="ayuda-documentos" class="form-text">Puedes adjuntar tu DNI o pasaporte (PDF, JPG o PNG).</div>
+          </div>
+
+          <div class="col-12">
+            <label for="comentarios" class="form-label">Comentarios</label>
+            <textarea id="comentarios" class="form-control" rows="4" placeholder="Ej.: Viajaremos 2 adultos y 1 niño." aria-describedby="ayuda-comentarios"></textarea>
+            <div id="ayuda-comentarios" class="form-text">Cuéntanos si tienes alguna indicación especial para tu viaje.</div>
+          </div>
+        </div>
+
+        <div class="botones d-flex flex-wrap gap-2 justify-content-end mt-4">
+          <button type="button" class="btn btn-cancelar">Cancelar</button>
+          <button type="button" class="btn btn-naranja">Enviar</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</section>
